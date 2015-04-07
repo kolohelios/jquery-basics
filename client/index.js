@@ -4,6 +4,22 @@ $(document).ready(init);
 
 function init() {
   //$('#equal').click(go);
+$('.article').click(setText);
+$('.noun').click(setText);
+$('.verb').click(setText);
+$('.adjective').click(setText);
+$('#clear').click(clear);
+}
+
+function clear() {
+  $('#sentence').text('');
+}
+
+function setText() {
+  var old = $('#sentence').text();
+  var text = $(this).text();
+  var newtext = old + ' ' + text;
+  $('#sentence').text(newtext);
 }
 
 /*
