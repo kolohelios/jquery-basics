@@ -3,9 +3,10 @@
 $(document).ready(init);
 
 function init() {
-  $('#equal').click(go);
+  //$('#equal').click(go);
 }
 
+/*
 function go() {
   var number1 = $('#x').val();
   var number2 = $('#y').val();
@@ -30,7 +31,7 @@ function go() {
   }
   $('#result').val(result);
 }
-
+*/
 
 
 /*

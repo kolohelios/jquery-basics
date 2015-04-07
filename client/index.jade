@@ -9,11 +9,22 @@ html
   body
     h1 jQuery Demo
   
-    input#x(type='text')
-    input#operator(type='text')
-    input#y(type='text') 
-    button#equal =
-    input#result(type='text')
+    #calcwrapper
+      p.calcblock
+        input#x(type='text')
+        span.calclabel Number 1
+      p.calcblock
+        input#operator(type='text')
+        span.calclabel Operator
+        span.calclabel ( + / - / * / / )
+      p.calcblock
+        input#y(type='text')
+        span.calclabel Number 2
+      p.calcblock
+        button#equal.calclabel =
+      p.calcblock
+        input#result(type='text')
+        span.calclabel result
     
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/lodash/lodash.min.js')
